@@ -10,13 +10,34 @@
  */
 
 import React from 'react'
-import {Button, View} from 'react-native'
+import {Button, View, Share} from 'react-native'
 
 export default class TTCarScreen extends React.Component {
     constructor(props) {
         super(props)
         this.state = {}
     }
+    onShare = async () => {
+        try {
+            const result = await Share.share({
+                message: 'React Native | A framework for building native apps using React',
+                title: 'React-Native',
+            });
+
+            if (result.action === Share.sharedAction) {
+                //表示内容已成功分享。
+                if (result.activityType) {
+                    // shared with activity type of result.activityType
+                } else {
+                    // shared
+                }
+            } else if (result.action === Share.dismissedAction) {
+                // dismissed 表示对话框被取消。仅限 iOS。
+            }
+        } catch (error) {
+            alert(error.message);
+        }
+    };
 
     render() {
         return (
@@ -26,6 +47,7 @@ export default class TTCarScreen extends React.Component {
                     title="Go to Details"
                     onPress={() => this.props.navigation.navigate('TTHomeDetailScreen')}
                 />
+                <Button onPress={this.onShare} title="Share" />
             </View>
         )
     }

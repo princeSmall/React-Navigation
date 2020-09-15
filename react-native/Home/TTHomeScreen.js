@@ -10,7 +10,7 @@
  */
 
 import React from 'react'
-import {View, FlatList, Text, TouchableOpacity} from 'react-native'
+import {View, FlatList, Text, TouchableOpacity, Appearance} from 'react-native'
 
 export default class TTHomeScreen extends React.Component {
     constructor(props) {
@@ -29,7 +29,7 @@ export default class TTHomeScreen extends React.Component {
                     name:'evenAnimated',
                     id: '2',
                     screen: 'TTEvenAnimated'
-                },{
+                }, {
                     name:'groupAnimated',
                     id: '3',
                     screen: 'TTGroupAnimated'
@@ -37,6 +37,12 @@ export default class TTHomeScreen extends React.Component {
             ],
         }
         this.renderItem = this.renderItem.bind(this)
+        const colorScheme = Appearance.getColorScheme();
+        if (colorScheme === 'dark'){
+            console.log('...dark')
+        }else if (colorScheme === 'light'){
+            console.log('...light')
+        }
     }
 
     renderItem = ({item}) => (

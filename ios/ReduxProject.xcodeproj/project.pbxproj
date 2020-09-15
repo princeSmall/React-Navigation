@@ -15,6 +15,9 @@
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* ReduxProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ReduxProjectTests.m */; };
+		5D10A753251089BD0029A1AB /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D10A752251089BD0029A1AB /* libz.tbd */; };
+		5D10A755251089C70029A1AB /* libbz2.1.0.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D10A754251089C70029A1AB /* libbz2.1.0.tbd */; };
+		5D10A7572510900B0029A1AB /* libreact-native-update.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D10A7562510900B0029A1AB /* libreact-native-update.a */; };
 		772138EDCE5E89C9F76F0818 /* libPods-ReduxProject-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B508FB703BE6CD92F3B16D37 /* libPods-ReduxProject-tvOS.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		C03DC9F1DB97AA8DD4952B95 /* libPods-ReduxProject.a in Frameworks */ = {isa = PBXBuildFile; fileRef = C0E311E44AC000A782718AA3 /* libPods-ReduxProject.a */; };
@@ -57,6 +60,9 @@
 		3A75DD91888FD160DF2B6D0E /* Pods-ReduxProject-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxProject-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-ReduxProject-tvOS/Pods-ReduxProject-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		4E28735F47220019D35EC397 /* Pods-ReduxProject-ReduxProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxProject-ReduxProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-ReduxProject-ReduxProjectTests/Pods-ReduxProject-ReduxProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5C0C31D1E76113C5FE9D3B56 /* Pods-ReduxProject-ReduxProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxProject-ReduxProjectTests.release.xcconfig"; path = "Target Support Files/Pods-ReduxProject-ReduxProjectTests/Pods-ReduxProject-ReduxProjectTests.release.xcconfig"; sourceTree = "<group>"; };
+		5D10A752251089BD0029A1AB /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		5D10A754251089C70029A1AB /* libbz2.1.0.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libbz2.1.0.tbd; path = usr/lib/libbz2.1.0.tbd; sourceTree = SDKROOT; };
+		5D10A7562510900B0029A1AB /* libreact-native-update.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "libreact-native-update.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = ReduxProject/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8A658867397EE68E5ED10B28 /* Pods-ReduxProject.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxProject.release.xcconfig"; path = "Target Support Files/Pods-ReduxProject/Pods-ReduxProject.release.xcconfig"; sourceTree = "<group>"; };
 		AC384CA98E8C1C4E4207F9DD /* Pods-ReduxProject-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReduxProject-tvOS.release.xcconfig"; path = "Target Support Files/Pods-ReduxProject-tvOS/Pods-ReduxProject-tvOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -82,6 +88,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D10A755251089C70029A1AB /* libbz2.1.0.tbd in Frameworks */,
+				5D10A7572510900B0029A1AB /* libreact-native-update.a in Frameworks */,
+				5D10A753251089BD0029A1AB /* libz.tbd in Frameworks */,
 				C03DC9F1DB97AA8DD4952B95 /* libPods-ReduxProject.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +148,9 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5D10A7562510900B0029A1AB /* libreact-native-update.a */,
+				5D10A754251089C70029A1AB /* libbz2.1.0.tbd */,
+				5D10A752251089BD0029A1AB /* libz.tbd */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				C0E311E44AC000A782718AA3 /* libPods-ReduxProject.a */,
@@ -194,7 +206,6 @@
 				BFC0E7C33D1D2D62F94D64C1 /* Pods-ReduxProject-tvOSTests.debug.xcconfig */,
 				E88E74F28C0E6FA0578E60B1 /* Pods-ReduxProject-tvOSTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -294,7 +305,9 @@
 						TestTargetID = 13B07F861A680F5B00A75B9A;
 					};
 					13B07F861A680F5B00A75B9A = {
+						DevelopmentTeam = C7G78L37X3;
 						LastSwiftMigration = 1120;
+						ProvisioningStyle = Automatic;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -375,7 +388,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
 		0AFBBCD0D1DA98993515A26C /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -385,10 +398,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ReduxProject/Pods-ReduxProject-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+				"${PODS_ROOT}/../../node_modules/react-native-update/ios/pushy_build_time.txt",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/pushy_build_time.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -483,10 +498,12 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-ReduxProject-ReduxProjectTests/Pods-ReduxProject-ReduxProjectTests-resources.sh",
 				"${PODS_CONFIGURATION_BUILD_DIR}/React-Core/AccessibilityResources.bundle",
+				"${PODS_ROOT}/../../node_modules/react-native-update/ios/pushy_build_time.txt",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/AccessibilityResources.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/pushy_build_time.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -655,9 +672,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C7G78L37X3;
 				ENABLE_BITCODE = NO;
 				INFOPLIST_FILE = ReduxProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -666,6 +687,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ReduxProject;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -678,8 +700,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = C7G78L37X3;
 				INFOPLIST_FILE = ReduxProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = (
 					"$(inherited)",
@@ -688,6 +714,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = ReduxProject;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -926,7 +953,7 @@
 				00E356F71AD99517003FC87E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "ReduxProject" */ = {
 			isa = XCConfigurationList;
@@ -935,7 +962,7 @@
 				13B07F951A680F5B00A75B9A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "ReduxProject-tvOS" */ = {
 			isa = XCConfigurationList;
@@ -944,7 +971,7 @@
 				2D02E4981E0B4A5E006451C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "ReduxProject-tvOSTests" */ = {
 			isa = XCConfigurationList;
@@ -953,7 +980,7 @@
 				2D02E49A1E0B4A5E006451C7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		83CBB9FA1A601CBA00E9B192 /* Build configuration list for PBXProject "ReduxProject" */ = {
 			isa = XCConfigurationList;
@@ -962,7 +989,7 @@
 				83CBBA211A601CBA00E9B192 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

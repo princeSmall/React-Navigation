@@ -9,7 +9,6 @@
  *
  */
 
-import React from 'react'
 import TTHomeDetailScreen from "./Home/TTHomeDetailScreen";
 import TTAnimatedScreen from "./Home/TTAnimatedScreen";
 import TTInterpolateAnimated from "./Home/TTInterpolateAnimated";
@@ -19,19 +18,19 @@ import TTGroupAnimated from "./Home/TTGroupAnimated";
 const NavigatorScreen = {
     TTHomeDetailScreen: {
         screen: TTHomeDetailScreen,
-        navigationOptions:{
+        navigationOptions: {
             title: '详情'
         }
     },
     TTAnimatedScreen: {
         screen: TTAnimatedScreen,
-        navigationOptions:{
+        navigationOptions: {
             title: '动画'
         }
     },
     TTInterpolateAnimated: {
         screen: TTInterpolateAnimated,
-        navigationOptions:{
+        navigationOptions: {
             title: 'interpolate'
         }
     },
@@ -47,6 +46,6 @@ const NavigatorScreen = {
             title: '组合动画'
         }
     }
-}
+};
 
 export default NavigatorScreen;

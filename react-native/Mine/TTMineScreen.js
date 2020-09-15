@@ -10,7 +10,7 @@
  */
 
 import React, {useState, useEffect} from 'react';
-import {Button, View, Text, TextInput,StyleSheet} from 'react-native';
+import {Button, View, Text, TextInput,StyleSheet, Keyboard} from 'react-native';
 
 export default class TTMineScreen extends React.Component {
     constructor(props) {
@@ -75,9 +75,6 @@ function ExampleProps(props) {
 
 function Example() {
     const [count, setCount] = useState(0)
-    // useEffect( ()=> {
-    //
-    // })
     return (
         <View>
             <Text>你点击了{count}次</Text>
